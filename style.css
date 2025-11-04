@@ -1,0 +1,275 @@
+/*  Variables & Base  */
+:root {
+  --bg: #f1e9df;
+  /* beige de fondo exterior */
+  --panel: #fff;
+  /* blanco de los paneles */
+  --hero: #e7d6c3;
+  /* beige de cabecera */
+  --text: #4b545e;
+  /* gris texto */
+  --muted: #6b7280;
+  /* gris suave */
+  --brown: #a9784a;
+  /* marrón títulos */
+  --line: #e6e0d8;
+  /* líneas divisorias */
+  --shadow: 0 8px 28px rgba(0, 0, 0, .08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* =============== Lienzo de página =============== */
+.page {
+  max-width: 980px;
+  margin: 28px auto;
+  padding: 12px;
+}
+
+/* =============== Cabecera (HERO) =============== */
+.hero {
+  background: var(--hero);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  border: 1px solid #ddcdbb;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero__photo img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f3ece4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+.hero__name {
+  font-family: "Merriweather", serif;
+  color: var(--brown);
+  font-size: 36px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.hero__role {
+  font-family: "Merriweather", serif;
+  color: var(--brown);
+  font-size: 18px;
+  margin: 6px 0 12px;
+}
+
+.hero__summary {
+  font-style: italic;
+  color: #6b5c4b;
+  margin: 0;
+}
+
+/* =============== Grid de contenido =============== */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  /* principal izquierda, lateral derecha */
+  gap: 22px;
+}
+
+/* =============== Principal (izquierda) =============== */
+.main {
+  background: var(--panel);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+/* Bloques/secciones del main */
+.section {
+  padding: 24px 26px;
+  position: relative;
+}
+
+.section+.section {
+  border-top: 1px solid var(--line);
+}
+
+.section__title {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  color: var(--brown);
+  margin: 0 0 14px;
+  position: relative;
+}
+
+.section__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60px;
+  height: 3px;
+  background: var(--brown);
+  border-radius: 3px;
+}
+
+/* Items */
+.item {
+  margin: 10px 0 14px;
+}
+
+.item--compact {
+  margin: 4px 0;
+}
+
+.item__title {
+  font-weight: 600;
+  color: #2b2f33;
+  margin: 0 0 2px;
+}
+
+.item__org {
+  color: var(--muted);
+  margin: 0;
+}
+
+.item__dates {
+  color: var(--muted);
+  font-size: 14px;
+  display: flex;
+  gap: 18px;
+  margin: 8px 0 6px;
+}
+
+.item__dates span {
+  white-space: nowrap;
+}
+
+.item__bullets {
+  margin: 0;
+  padding: 0 0 0 18px;
+}
+
+.item__bullets li {
+  margin: 6px 0;
+}
+
+/* Banda de progreso “En curso” */
+.pill-progress {
+  margin-top: 12px;
+}
+
+.pill-progress__track {
+  position: relative;
+  height: 8px;
+  border-radius: 8px;
+  background: #eae3da;
+}
+
+.pill-progress__label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-140%);
+  background: #cfb395;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
+}
+
+/* =============== Lateral (derecha) =============== */
+.sidebar {
+  background: var(--panel);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  padding: 18px 18px;
+}
+
+.sideblock+.sideblock {
+  border-top: 1px solid var(--line);
+  margin-top: 14px;
+  padding-top: 14px;
+}
+
+.sideblock__title {
+  font-family: "Merriweather", serif;
+  color: var(--brown);
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+/* Listas del lateral */
+.contact,
+.skill-list,
+.lang-list,
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact li,
+.skill-list li,
+.lang-list li,
+.info-list li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.contact a {
+  color: #2b5aa6;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Pequeñas “pseudo-iconos” mono espaciados */
+.ico {
+  display: inline-block;
+  width: 1.1em;
+  margin-right: .4em;
+  font-family: "Segoe UI Symbol", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+}
+
+/* =============== Responsive =============== */
+@media (max-width: 850px) {
+  .hero__grid {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .hero__name {
+    font-size: 30px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    order: 2;
+  }
+}

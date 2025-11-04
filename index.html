@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Pedro Palazón</title>
+
+  <!-- fuentes  -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- llamada al estilo -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- página principal del CV -->
+  <div class="page">
+
+    <!-- HERO (es la cabecera beige con foto + nombre + subtítulo + resumen) -->
+    <header class="hero">
+      <div class="hero__grid">
+        <div class="hero__photo">
+          <!-- Meter la imagen, cuando me haga fotito -->
+          <img src="https://via.placeholder.com/220x220.png?text=Foto" alt="Foto de perfil" />
+        </div>
+        <div class="hero__text">
+          <h1 class="hero__name">Pedro Palazón</h1>
+          <p class="hero__role">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</p>
+          <p class="hero__summary">
+            Apasionado de la tecnología y el desarrollo, <!-- poner algo más!! -->
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- CUERPO: dos columnas (clumna principal + columna lateral) -->
+    <div class="content-grid">
+
+      <!-- Columna principal (izquierda) -->
+      <main class="main">
+
+        <!-- Experiencia profesional -->
+        <section class="section">
+          <h2 class="section__title">Experiencia Profesional</h2>
+
+          <article class="item">
+            <h3 class="item__title">Trabajo como socorrista</h3>
+            <p class="item__org">GOfit Córdoba</p>
+            <div class="item__dates">
+              <span>04/2022 - 10/2022</span>
+              <span>10/2022 - Actualidad</span>
+            </div>
+
+            <ul class="item__bullets">
+              <li>Gestión de incidencias y trabajo cara al público.</li>
+              <li>Resolución de problemas con agilidad y trabajo en equipo.</li>
+              <li>Trabajo en equipo.</li>
+              <li>Atención básica primeros auxilios.</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Formación oficial -->
+        <section class="section">
+          <h2 class="section__title">Formación Oficial</h2>
+
+          <article class="item">
+            <h3 class="item__title">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+            <p class="item__org">Universae</p>
+            <p class="item__dates">2024 - Actualidad</p>
+          </article>
+
+          <article class="item">
+            <h3 class="item__title">Bachillerato de Ciencias y Tecnología</h3>
+            <p class="item__org">Las Francesas, Córdoba</p>
+            <p class="item__dates">2014-2016 </p>
+        </section>
+
+        <!-- Formación complementaria -->
+        <section class="section">
+          <h2 class="section__title">Formación Complementaria</h2>
+
+          <article class="item">
+            <h3 class="item__title">Curso de Arquitectura Software</h3>
+            <p class="item__org">Aula de Software Libre, UCO</p>
+            <p class="item__dates"> 2025</p>
+
+            <ul class="item__bullets">
+              <li>Backend, arquitectura software, clean code</li>
+              <li>Testing, DDD, Arquitectura hexagonal, GitHub</li>
+              <li>Event sourcing, cqrs, etc</li>
+            </ul>
+
+            <!--“En curso” -->
+            <div class="pill-progress">
+              <div class="pill-progress__track">
+                <span class="pill-progress__label">En curso</span>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- Otras acreditaciones -->
+        <section class="section">
+          <h2 class="section__title">Otras acreditaciones</h2>
+          <article class="item item--compact">
+            <h3 class="item__title">Curso de Empleabilidad y Sociabilidad (65h)</h3>
+            <p class="item__org">Cámara de Comercio de Córdoba</p>
+            <p class="item__dates">2022</p>
+          </article>
+
+          <article class="item item--compact">
+            <h3 class="item__title">Primeros Auxilios y DEA</h3>
+            <p class="item__org">ENSSAP</p>
+            <p class="item__dates">2024</p>
+          </article>
+
+
+        </section>
+
+      </main>
+
+      <!-- Lateral (derecha) -->
+      <aside class="sidebar">
+
+        <!-- Contacto -->
+        <section class="sideblock">
+          <h2 class="sideblock__title">Contacto</h2>
+          <ul class="contact">
+            <li><span class="ico"></span> +34 664 733 191</li>
+            <li><span class="ico">✉</span> <a href="mailto:pedro.palazalba@gmail.com">pedro.palazalba@gmail.com</a></li>
+            <li><span class="ico"></span> Córdoba, España</li>
+            <li><span class="ico"></span> <strong>LinkedIn:</strong> <br>
+              <a href="www.linkedin.com/in/pedro-palazon-alba1998" target="_blank"
+                rel="noopener">www.linkedin.com/in/pedro-palazon-alba1998</a>
+            </li>
+            <li><span class="ico"></span> <strong>GitHub:</strong> <br>
+              <a href="https://github.com/Zormorych" target="_blank" rel="noopener">https://github.com/Zormorych</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="sideblock">
+          <h2 class="sideblock__title">Habilidades</h2>
+          <ul class="skill-list">
+            <li><span class="ico">☕</span> Programación en <strong>Java</strong>: POO, colecciones, estructuras de
+              control.</li>
+            <li><span class="ico">🧩</span> Proyectos con <strong>Maven</strong> y gestión de dependencias (Gson, etc.).
+            </li>
+            <li><span class="ico">💾</span> Manejo básico de <strong>JSON</strong> para guardar y cargar datos.</li>
+            <li><span class="ico">🔧</span> Uso de <strong>Git y GitHub</strong> para control de versiones.</li>
+            <li><span class="ico">🗃</span><strong>SQL</strong> y bases de datos relacionales.</li>
+            <li><span class="ico">🧠</span> Buenas prácticas y principios <strong>SOLID</strong>.</li>
+            <li><span class="ico">🧍‍♂️</span> Habilidades personales: aprendizaje constante, organización y trabajo en
+              equipo.</li>
+          </ul>
+        </section>
+
+
+        <!-- Idiomas -->
+        <section class="sideblock">
+          <h2 class="sideblock__title">Idiomas</h2>
+          <ul class="lang-list">
+            <li>Español: Nativo</li>
+            <li>Inglés: Intermedio</li>
+          </ul>
+        </section>
+
+        <!-- pequeño hueco libre para - Información de interés -->
+
+        <section class="sideblock">
+          <h2 class="sideblock__title">Información de interés</h2>
+          <ul class="info-list">
+            <li>Certificado de Garantía Juvenil</li>
+          </ul>
+        </section>
+
+
+      </aside>
+    </div>
+  </div>
+</body>
+
+</html>
