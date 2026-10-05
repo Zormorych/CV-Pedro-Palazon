@@ -22,22 +22,21 @@
     <header class="hero">
       <div class="hero__grid">
         <div class="hero__photo">
-          <!-- Imagen metida, (hacerme una mejor) -->
           <img src="foto_pedro_CV.jpg" alt="Foto de Pedro Palazón" />
         </div>
         <div class="hero__text">
           <h1 class="hero__name">Pedro Palazón</h1>
-          <p class="hero__role">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</p>
+          <p class="hero__role">Desarrollador Junior · Java/Spring Boot · PHP/Laravel</p>
           <p class="hero__summary">
-            Apasionado de la tecnología buscando crecer en un entorno profesional e interesado en el aprendizaje
-            constante para ser un programador sólido
-            capaz de diseñar y mantener aplicaciones eficientes. <!-- no se si me convence! -->
+            Orientado al backend y a la calidad del código. Actualmente modernizo aplicaciones legacy con deuda
+            técnica: separación por capas, inyección de dependencias y cobertura de tests. Experiencia en
+            microservicios y APIs REST. Formación en clean code, DDD y arquitectura hexagonal.
           </p>
         </div>
       </div>
     </header>
 
-    <!-- CUERPO: dos columnas (clumna principal + columna lateral) -->
+    <!-- CUERPO: dos columnas (columna principal + columna lateral) -->
     <div class="content-grid">
 
       <!-- Columna principal (izquierda) -->
@@ -48,33 +47,67 @@
           <h2 class="section__title">Experiencia Profesional</h2>
 
           <article class="item">
-            <h3 class="item__title">Programador en prácticas</h3>
-            <p class="item__org">ICCA</p>
+            <h3 class="item__title">Desarrollador Junior</h3>
+            <p class="item__org">PTV Telecom</p>
             <div class="item__dates">
-              <span>02/2026 - Actualidad</span>
-
+              <span>09/2026 – Actualidad</span>
             </div>
             <ul class="item__bullets">
-              <li>Desarrollo de microservicios en Java 21 con Spring Boot.</li>
-              <li>Colaboración en equipo, gestión de proyectos con Gitlab y gestión de dependencias en Maven.</li>
-              <li>Testing y metodología Agile.</li>
+              <li>Desarrollo de aplicaciones web en PHP con Laravel y vistas Blade.</li>
+              <li>Refactorización de aplicaciones legacy que llevaban más de 15 años sin mantenimiento: separación de
+                responsabilidades, inyección de dependencias y cláusulas de guarda.</li>
+              <li>Aumento de la cobertura de tests desde cero con PHPUnit, para refactorizar con
+                seguridad.</li>
             </ul>
           </article>
 
           <article class="item">
-            <h3 class="item__title">Socorrista</h3>
-            <p class="item__org">GOfit Córdoba</p>
+            <h3 class="item__title">Desarrollador Backend en prácticas</h3>
+            <p class="item__org">ICCA</p>
             <div class="item__dates">
-              <span>04/2022 - Actualidad</span>
-
+              <span>02/2026 – 07/2026</span>
             </div>
-
             <ul class="item__bullets">
-              <li>Gestión de incidencias y trabajo cara al público.</li>
-              <li>Resolución de problemas con agilidad y trabajo en equipo.</li>
-
-
+              <li>Participación en el equipo backend de un proyecto público del sector del transporte, con
+                microservicios en Java 21 y Spring Boot.</li>
+              <li>Desarrollo de métodos CRUD con filtros en la API REST.</li>
+              <li>Testing con JUnit y Mockito, pruebas de endpoints con Swagger y refactorización de código.</li>
+              <li>Revisión de logs, pipelines de CI/CD y bases de datos.</li>
+              <li>Trabajo en sprints Agile, con reuniones semanales del equipo backend y coordinación con el equipo de
+                frontend.</li>
             </ul>
+          </article>
+
+          <article class="item item--compact">
+            <h3 class="item__title">Socorrista</h3>
+            <p class="item__org">Grupo Ocean · GO fit Córdoba</p>
+            <div class="item__dates">
+              <span>04/2022 – 09/2026</span>
+            </div>
+            <ul class="item__bullets">
+              <li>Coordinación dentro de un equipo amplio de cara al público: comunicación, gestión de incidencias y
+                resolución de problemas.</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="section">
+          <h2 class="section__title">Proyectos</h2>
+
+          <article class="item item--compact">
+            <h3 class="item__title">App web con firma digital <span class="item__stack">· PHP, Laravel</span></h3>
+            <p class="item__desc">Login con seguridad robusta y formulario con firma en canvas que genera un PDF firmado.</p>
+          </article>
+
+          <article class="item item--compact">
+            <h3 class="item__title">Gestor de tareas <span class="item__stack">· Java, Spring Boot</span></h3>
+            <p class="item__desc">Arquitectura hexagonal, con el dominio desacoplado de la infraestructura.</p>
+          </article>
+
+          <article class="item item--compact">
+            <h3 class="item__title">Gestión de ventas <span class="item__stack">· Java, Spring Boot</span></h3>
+            <p class="item__desc">Aplicación backend para la gestión de ventas.</p>
           </article>
         </section>
 
@@ -85,13 +118,14 @@
           <article class="item">
             <h3 class="item__title">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
             <p class="item__org">Universae</p>
-            <p class="item__dates">2024 - 2026</p>
+            <p class="item__dates">2024 – 2026</p>
           </article>
 
           <article class="item">
             <h3 class="item__title">Bachillerato de Ciencias y Tecnología</h3>
             <p class="item__org">Las Francesas, Córdoba</p>
-            <p class="item__dates">2014-2016 </p>
+            <p class="item__dates">2014 – 2016</p>
+          </article>
         </section>
 
         <!-- Formación complementaria -->
@@ -99,41 +133,16 @@
           <h2 class="section__title">Formación Complementaria</h2>
 
           <article class="item">
-            <h3 class="item__title">Curso de Arquitectura Software</h3>
-            <p class="item__org">Aula de Software Libre, UCO</p>
-            <p class="item__dates"> 2025</p>
+            <h3 class="item__title">Curso de Arquitectura de Software</h3>
+            <p class="item__org">Aula de Software Libre, Universidad de Córdoba</p>
+            <p class="item__dates">2025</p>
 
             <ul class="item__bullets">
-              <li>Backend, arquitectura software, clean code</li>
-              <li>Testing, DDD, Arquitectura hexagonal, Git</li>
-              <li>Event sourcing, cqrs, etc</li>
+              <li>Arquitectura de software backend y clean code.</li>
+              <li>DDD, arquitectura hexagonal, event sourcing y CQRS.</li>
+              <li>Testing y control de versiones con Git.</li>
             </ul>
-
-            <!--“En curso” -->
-            <div class="pill-progress">
-              <div class="pill-progress__track">
-                <span class="pill-progress__label">Finalizado</span>
-              </div>
-            </div>
           </article>
-        </section>
-
-        <!-- Otras acreditaciones -->
-        <section class="section">
-          <h2 class="section__title">Otras acreditaciones</h2>
-          <article class="item item--compact">
-            <h3 class="item__title">Curso de Empleabilidad y Sociabilidad (65h)</h3>
-            <p class="item__org">Cámara de Comercio de Córdoba</p>
-            <p class="item__dates">2022</p>
-          </article>
-
-          <article class="item item--compact">
-            <h3 class="item__title">Primeros Auxilios y DEA</h3>
-            <p class="item__org">ENSSAP</p>
-            <p class="item__dates">2024</p>
-          </article>
-
-
         </section>
 
       </main>
@@ -148,15 +157,12 @@
             <li><span class="ico">📞</span> +34 664 733 191</li>
             <li><span class="ico">✉</span> <a href="mailto:pedro.palazalba@gmail.com">pedro.palazalba@gmail.com</a></li>
             <li><span class="ico">📍</span> Córdoba, España</li>
-            <li><span class="ico">💼</span>
-              <strong>LinkedIn:</strong> <br>
+            <li><span class="ico">💼</span> <strong>LinkedIn:</strong> <br>
               <a href="https://www.linkedin.com/in/pedro-palazon98/" target="_blank"
-                rel="noopener">https://www.linkedin.com/in/pedro-palazon98/
-
-              </a>
+                rel="noopener">linkedin.com/in/pedro-palazon98</a>
             </li>
             <li><span class="ico">🖥️</span> <strong>GitHub:</strong> <br>
-              <a href="https://github.com/Zormorych" target="_blank" rel="noopener">https://github.com/Zormorych</a>
+              <a href="https://github.com/Zormorych" target="_blank" rel="noopener">github.com/Zormorych</a>
             </li>
           </ul>
         </section>
@@ -165,17 +171,19 @@
         <section class="sideblock">
           <h2 class="sideblock__title">Habilidades</h2>
           <ul class="skill-list">
-            <li><span class="ico">☕</span> Programación en <strong>Java</strong>: POO, colecciones, estructuras de
-              control, desarrollo de <strong>API</strong>.</li>
-            <li><span class="ico">🧩</span> <strong>Maven</strong>, <strong>GitLab</strong>, <strong>Fork</strong>,
-              <strong>DBeaver</strong> y pruebas con <strong>Postman</strong>.
+            <li><span class="ico">☕</span> <strong>Backend:</strong> Java 21 con Spring Boot (microservicios, API REST)
+              y PHP con Laravel (vistas Blade).</li>
+            <li><span class="ico">🗃</span> <strong>Bases de datos:</strong> SQL, PostgreSQL, MySQL/MariaDB y DBeaver.
             </li>
-            <li><span class="ico">💾</span> Manejo básico de <strong>JSON</strong> para guardar y cargar datos.</li>
-            <li><span class="ico">🔧</span> Uso de <strong>Git</strong> para control de versiones.</li>
-            <li><span class="ico">🗃</span><strong>SQL</strong> y bases de datos relacionales.</li>
-            <li><span class="ico">🧠</span> Buenas prácticas y principios <strong>SOLID</strong>.</li>
-            <li><span class="ico">🧍‍♂️</span> <strong> Habilidades personales:</strong> Gran compromiso con la mejora
-              continua, soy un persona con una actitud <strong> proactiva, resolutiva y colaboradora.</strong></li>
+            <li><span class="ico">🧪</span> <strong>Testing y calidad:</strong> JUnit, Mockito, PHPUnit, Postman,
+              Swagger y refactorización de código legacy.</li>
+            <li><span class="ico">🧠</span> <strong>Arquitectura:</strong> POO, SOLID, clean code, arquitectura por capas,
+              inyección de dependencias, DDD y arquitectura hexagonal.</li>
+            <li><span class="ico">🔧</span> <strong>Herramientas:</strong> Git, GitLab, Maven, Fork y pipelines de CI/CD.
+            </li>
+            <li><span class="ico">🔄</span> <strong>Metodología:</strong> Agile con sprints.</li>
+            <li><span class="ico">🧍‍♂️</span> <strong>Habilidades personales:</strong> compromiso con la mejora continua
+              y actitud proactiva, resolutiva y colaboradora.</li>
           </ul>
         </section>
 
@@ -185,12 +193,11 @@
           <h2 class="sideblock__title">Idiomas</h2>
           <ul class="lang-list">
             <li>Español: Nativo</li>
-            <li>Inglés: Intermedio - B2 Cambridge</li>
+            <li>Inglés: B2 (certificado Cambridge)</li>
           </ul>
         </section>
 
-        <!-- pequeño hueco libre para - Información de interés -->
-
+        <!-- Información de interés -->
         <section class="sideblock">
           <h2 class="sideblock__title">Información de interés</h2>
           <ul class="info-list">
